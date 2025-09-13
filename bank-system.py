@@ -16,17 +16,18 @@ class Bank:
     
 
 
-    def bal(self):
+    def balance(self):
         print(f" your balance is {self.bal}")
-        
+
 
 
 
 
 b1=Bank(101010,500)
 
-b1.deposite(500)
-
+b1.deposite(2000)
+b1.withdraw(200)
+b1.balance()
 
 
 
