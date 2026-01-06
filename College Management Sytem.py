@@ -43,17 +43,27 @@ class Teacher(Person):
         return f" miss/mrs will teach {self.sub} subject"
     
 
+class HOD(Teacher):
+    def __init__(self,dep,sub,sal,name,id_no,role):
+        self.dep=dep
+        super().__init__(sub,sal,name,id_no,role)
 
 
+    def conduct_meeting(self):
+        print("today has meeting")
 
-# s1=Student("BCA","2","student","2607","chandresh")
-# print(s1.get_details())
-# print(s1.study())
-# 
+
+s1=Student("BCA","2","student","2607","chandresh")
+print(s1.get_details())
+print(s1.study())
+
 
 t1 = Teacher("Python", 50000,"anisha","101","teacher")
 print(t1.get_details())
 print(t1.teach())
+
+
+
 
 
 

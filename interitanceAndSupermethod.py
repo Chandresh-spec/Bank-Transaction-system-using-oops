@@ -68,20 +68,52 @@
 # method overide
 
 
-class BCA1:
-    def num_of_st(self):
-        print("student number are 100")
+# class BCA1:
+    # def num_of_st(self):
+        # print("student number are 100")
+# 
+# 
+# 
+# class Canara(BCA1):
+    # def num_of_st(self):
+        # super().num_of_st()
+        # print("number of student are 300")
+# 
+# 
+# 
+# 
+# 
+# c1=Canara()
+# c1.num_of_st()
 
 
 
-class Canara(BCA1):
-    def num_of_st(self):
-        super().num_of_st()
-        print("number of student are 300")
+
+class Bank:
+    def __init__(self,data):
+        self.data=data
+
+
+    def print_data(self):
+        print(self.data)
 
 
 
+class Student(Bank):
+    def __init__(self,number,data):
+        self.number=number
+
+        super().__init__(data)
+
+    
+    def print_number(self):
+        print(self.data)
 
 
-c1=Canara()
-c1.num_of_st()
+
+s1=Student("name","moger")
+
+s1.print_number()
+
+
+    

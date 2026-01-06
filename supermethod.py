@@ -7,5 +7,5 @@ class B(A):
         super().greet()   # Call parent method
         print("Hello from class B")
 
-b = B()
-b.greet()
+# b = B()
+# b.greet()
